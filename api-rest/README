@@ -1,0 +1,15 @@
+Características REST
+Esta API sigue los principios de diseño REST:
+
+Utiliza los métodos HTTP adecuados: GET, POST, PUT y DELETE.
+
+Los recursos están representados con rutas claras como /productos y /productos/:id.
+
+La API es stateless, es decir, no guarda estado entre una solicitud y otra.
+
+Todas las respuestas están en formato JSON, que es el estándar para APIs RESTful.
+
+Se manejan correctamente los códigos de estado HTTP para indicar el resultado de las operaciones (por ejemplo, 200 OK, 201 Created, 204 No Content, 400 Bad Request, 404 Not Found).
+
+Diferencias con el diseño anterior
+El diseño anterior ya utilizaba una arquitectura de tres capas, pero no seguía completamente el enfoque REST. Las rutas no estaban bien definidas como recursos, no se usaban todos los métodos HTTP y no se implementaban correctamente los códigos de estado. En esta versión refactorizada se mejora la estructura de rutas, se incorporan los métodos y respuestas propios de REST, y se vuelve una API más clara, reutilizable y preparada para integrarse fácilmente con clientes web o móviles.
